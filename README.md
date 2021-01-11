@@ -10,7 +10,7 @@ This theme is Fit for status site or Notes.
 
 > Built Using **Gridsome** - Static Site Generator for Vue.js
 
-I just made some Modifications and Include EXtra Features like
+I just made some Modifications and Include Extra Features like
 
 - PWA - Service Worker
 - Social Meta tags
