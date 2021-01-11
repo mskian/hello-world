@@ -1,0 +1,49 @@
+{
+    "background_color": "#ffffff",
+    "icon_path": "./src/assets/icons/Icon-512.png",
+    "name": "Hello World",
+    "short_name": "Hello World",
+    "description": "Share Something useful related to Life and tech.",
+    "theme_color": "#ffffff",
+    "lang": "en",
+    "display": "standalone",
+    "orientation": "any",
+    "start_url": "/",
+    "file_name": "manifest.json",
+    "scope": "/",
+    "dir": "auto",
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "icons": [
+        {
+            "src": "/assets/img/Icon-512-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/assets/img/Icon-512-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/assets/img/Icon-512-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/assets/img/Icon-512-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/assets/img/Icon-512-72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/assets/img/Icon-512-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        }
+    ]
+}

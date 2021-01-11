@@ -1,0 +1,41 @@
+{
+  "name": "hello-world",
+  "description": "Share Something useful related to Life and tech.",
+  "version": "1.0.0",
+  "author": "Santhosh Veer",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskian/hello-world.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mskian/hello-world/issues"
+  },
+  "homepage": "https://github.com/mskian/hello-world/#readme",
+  "keywords": [
+    "minimal",
+    "responsive",
+    "pwa",
+    "markdown"
+  ],
+  "dependencies": {
+    "@gridsome/plugin-sitemap": "^0.4.0",
+    "@gridsome/remark-prismjs": "^0.5.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "gridsome": "^0.7.23",
+    "gridsome-plugin-feed": "^1.0.2"
+  },
+  "devDependencies": {
+    "gridsome-plugin-manifest": "^0.3.5",
+    "gridsome-plugin-service-worker": "^0.2.6",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0"
+  }
+}

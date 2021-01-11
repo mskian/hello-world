@@ -1,0 +1,5 @@
+# Netlify redirects file, edit with your domain
+# https://www.netlify.com/docs/redirects/
+
+https://hello-world-blog.netlify.app/* https://hello.sanweb.info/:splat 301!
+https://hello-world-blog.netlify.app/* https://hello.sanweb.info/:splat 301!
