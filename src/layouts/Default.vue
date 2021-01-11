@@ -67,6 +67,8 @@ body {
   padding:0;
   line-height: 1.5;
   font-size:1.1em;
+  -webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: grayscale;
 }
 .layout {
   max-width: 760px;

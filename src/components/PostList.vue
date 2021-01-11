@@ -1,6 +1,7 @@
 <template>
   <div class="post-list">
     <h1>{{year}}</h1>
+    <br>
     <PostItem :key="post.node.id" v-for="post in this.postsByYear" :post="post.node" />
   </div>
 </template>
