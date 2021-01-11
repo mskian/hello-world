@@ -35,6 +35,12 @@ yarn develop
 
 - Add post content - `/content/posts`
 
+## Free Hosting
+
+Host it on Netlify for free
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mskian/hello-world)
+
 ## LICENSE
 
 MIT
