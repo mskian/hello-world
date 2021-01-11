@@ -1,6 +1,7 @@
 ---
 title: "Hello World"
 description: "The first post written in Markdown"
+tags: ['general']
 date: 2021-01-11
 ---
 

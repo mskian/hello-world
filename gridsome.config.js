@@ -8,6 +8,10 @@ module.exports = {
   siteName: 'Hello World - Santhosh Veer',
   siteUrl: 'https://hello.sanweb.info/',
   siteDescription: 'Share Something useful related to Life and tech.',
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id',
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -15,6 +19,13 @@ module.exports = {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
         route: '/:title',
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true,
+          },
+        },   
         remark: {
           plugins: [
             ['@gridsome/remark-prismjs', {transformInlineCode: true}]
@@ -91,5 +102,11 @@ module.exports = {
         },
       },
     },
-  ]
+  ],
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
+    },
+  },
 }

@@ -1,9 +1,10 @@
 <template>
   <Layout>
     <div class="article">
-      <h1 class="article-title">{{$page.post.title}}</h1>
+      <hr>
       <br>
-      <p class="article-date"> {{ $page.post.date}} · <i>{{$page.post.timeToRead}} min read</i></p>
+      <h1 class="article-title">{{$page.post.title}}</h1>
+       <PostTags :tags="$page.post.tags" />
       <article v-html="$page.post.content" />
       <br>
     </div>
@@ -20,15 +21,22 @@ query Post ($path: String!) {
     date (format: "D MMMM YYYY")
     timeToRead
     path
+    tags {
+      id
+      title
+      path
+    }
   }
 }
 </page-query>
 
 <script>
 import Header from "@/components/Header";
+import PostTags from "@/components/PostTags";
 export default {
   components: {
-    Header
+    Header,
+    PostTags
   },
   metaInfo() {
     return {

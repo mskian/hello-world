@@ -16,6 +16,7 @@ I just made some Modifications and Include Extra Features like
 - Social Meta tags
 - Canonical URL
 - Manifest
+- Post tags
 
 ## Usage
 

@@ -15,6 +15,7 @@
         <a target="_blank" href="/feed.xml">RSS Feed</a>
       </div>
     </div>
+    <br>
   </main>
 </template>
 
@@ -93,13 +94,11 @@ body {
 }
 
 a {
-  border-bottom: 1px solid currentColor;
   color: var(--link-color);
   text-decoration: none;
 
 }
 a:hover {
-  border-bottom-color: currentColor;
   color: #686868;
 }
 
