@@ -6,7 +6,9 @@
 
 Thanks to @alexbrown for this awesome Minimal and Light weight Gridsome Starter theme - <https://github.com/alexbrown/gridsome-starter-minimal-blog>
 
-This theme Really good for status site and taking Notes/save the useful resources.
+This theme is Fit for status site or Notes.
+
+> Built Using **Gridsome** - Static Site Generator for Vue.js
 
 I just made some Modifications and Include EXtra Features like
 
