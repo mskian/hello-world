@@ -14,6 +14,7 @@ I just made some Modifications and Include Extra Features like
 
 - PWA - Service Worker
 - Social Meta tags
+- Optimized Meta tags
 - Canonical URL
 - Manifest
 - Post tags

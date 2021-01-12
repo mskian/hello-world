@@ -37,12 +37,9 @@ export default {
   },
 metaInfo() {
     return {
+      title: this.$page.siteName,
       meta: [
         { name: "author", content: "Santhosh Veer" },
-        {
-          name: "description",
-          content: "Share Something useful related to Life and tech."
-        },
         {
           rel: "canonical",
           href: "https://hello.sanweb.info/"

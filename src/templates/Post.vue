@@ -42,7 +42,7 @@ export default {
     return {
       title: this.$page.post.title,
        meta: [
-        { name: "description", content: this.$page.post.description },
+        { key: 'description', name: "description", content: this.$page.post.description },
         {
           rel: "canonical",
           href: 'https://hello.sanweb.info' + this.$page.post.path

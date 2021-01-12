@@ -44,7 +44,7 @@ export default {
     return {
     title: this.$page.tag.title,
      meta: [
-        { name: "description", content: this.$page.tag.title + " - Share Something useful related to Life and tech." },
+        { key: 'description', name: "description", content: this.$page.tag.title + " - Share Something useful related to Life and tech." },
         {
           rel: "canonical",
           href: 'https://hello.sanweb.info' + "/tag/" + this.$page.tag.title
