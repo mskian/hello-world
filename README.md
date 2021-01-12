@@ -22,7 +22,9 @@ I just made some Modifications and Include Extra Features like
 - Post tags
 - Post Author
 - Create new post file via Command
-- Custom 404 Error Page  
+- Custom 404 Error Page
+- Pagination
+- Archive Page  
 
 ## Usage 📦
 
