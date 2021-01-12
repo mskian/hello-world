@@ -3,6 +3,7 @@ title: "New Post via Command"
 description: "A Simple Script to Create a New Post File."
 date: 2021-01-12 09:22:29
 tags: ["general"]
+author: santhosh
 ---
 
 Here is a Simple Script to create a New Post Markdown File.

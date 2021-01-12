@@ -20,6 +20,7 @@ I just made some Modifications and Include Extra Features like
 - Canonical URL
 - Manifest
 - Post tags
+- Post Author
 - Create new post file via Command
 - Custom 404 Error Page  
 

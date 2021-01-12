@@ -7,6 +7,10 @@
        <PostTags :tags="$page.post.tags" />
       <article v-html="$page.post.content" />
       <br>
+      <hr>
+      Written by <a :href="'/author/' +  $page.post.author.title">{{ $page.post.author.title}}</a>
+      <br>
+      <br>
     </div>
   </Layout>
 </template>
@@ -22,6 +26,11 @@ query Post ($path: String!) {
     timeToRead
     path
     tags {
+      id
+      title
+      path
+    }
+    author {
       id
       title
       path

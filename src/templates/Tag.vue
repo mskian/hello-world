@@ -2,9 +2,9 @@
   <Layout>
     <br>
     <br>
-    <h1 class="title is-size-1 has-text-centered">
-      # {{ $page.tag.title }}
-    </h1>
+    <h2 class="title is-size-1 has-text-centered">
+      Tagged in: {{ $page.tag.title }}
+    </h2>
      <br>
      <section class="posts">
       <TagList v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />

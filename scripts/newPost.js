@@ -19,6 +19,7 @@ title: "${title}"
 description: ""
 date: ${postDate}
 tags: ["general"]
+author: santhosh
 ---
 `
 

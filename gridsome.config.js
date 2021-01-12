@@ -11,6 +11,7 @@ module.exports = {
   templates: {
     Post: '/:title',
     Tag: '/tag/:id',
+    Author: '/author/:id',
   },
   plugins: [
     {
@@ -23,6 +24,10 @@ module.exports = {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
+            create: true,
+          },
+          author: {
+            typeName: 'Author',
             create: true,
           },
         },   

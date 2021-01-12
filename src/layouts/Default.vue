@@ -7,11 +7,11 @@
         <p>
           Built with
           <a target="_blank" rel="nofollow noopener" class="link" href="//gridsome.org">Gridsome</a>
-          and Made with ❤
+          and Made with 💙
         </p>
       </div>
       <div class="footer-links">
-        <a target="_blank" href="/sitemap.xml">Sitemap</a>
+        <a target="_blank" href="/sitemap.xml">Sitemap</a> |
         <a target="_blank" href="/feed.xml">RSS Feed</a>
       </div>
     </div>
@@ -59,7 +59,17 @@ query {
     --link-color: #004732;
     --footer-link-color: #686868;
 }
-
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(15, 22, 65, 0.5);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(29, 116, 247, 0.5);
+}
 body {
   background-color: var(--app-background-color);
   color: var(--app-font-color);
