@@ -18,6 +18,7 @@ I just made some Modifications and Include Extra Features like
 - Canonical URL
 - Manifest
 - Post tags
+- Create new post file via Command
 
 ## Usage
 
@@ -36,6 +37,18 @@ yarn develop
 ```
 
 - Add post content - `/content/posts`
+
+```sh
+yarn newpost
+```
+
+- Production Build
+
+```sh
+yarn build
+```
+
+- Production Build store the Static Files on `dist` Folder
 
 ## Free Hosting
 
