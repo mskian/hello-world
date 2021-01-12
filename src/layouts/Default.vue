@@ -6,13 +6,14 @@
       <div>
         <p>
           Built with
-          <a target="_blank" rel="nofollow noopener" class="link" href="//gridsome.org">Gridsome</a>
+          <a target="_blank" rel="nofollow noopener noreferrer" class="link" href="//gridsome.org">Gridsome</a>
           and Made with 💙
         </p>
       </div>
       <div class="footer-links">
-        <a target="_blank" href="/sitemap.xml">Sitemap</a> |
-        <a target="_blank" href="/feed.xml">RSS Feed</a>
+        <a target="_blank" rel="noopener noreferrer" href="/archives/">Archives</a> |
+        <a target="_blank" rel="noopener noreferrer" href="/sitemap.xml">Sitemap</a> |
+        <a target="_blank" rel="noopener noreferrer" href="/feed.xml">RSS Feed</a>
       </div>
     </div>
     <br>

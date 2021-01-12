@@ -1,45 +1,19 @@
 <template>
   <Layout>
-    <hr>
     <section class="posts">
-    <h2 class="article-title">My Write up's</h2>
-    <div class="post-list">
-    <p :key="post.node.id" v-for="post in $page.posts.edges">
-      ➡ <span class="date"> {{ post.node.date}}</span>
-    <g-link :to="post.node.path">
-      {{ post.node.title }}
-    </g-link>
-    </p>
-      <hr>
-      <Pager 
-      :info="$page.posts.pageInfo" 
-      :showNavigation="true"
-      :showLinks="true"
-      :range="2"
-     />
-    </div>
+      <PostList v-for="year in years" :key="year" :year="year" />
     </section>
   </Layout>
 </template>
 
-<static-query>
-query {
- metadata {
-    siteName
-  }
-}
-</static-query>
-
 <page-query>
-query Posts ($page: Int) {
-  posts: allPost (perPage: 3, page: $page) @paginate {
+query {
+  metadata {
+    siteName
+    siteDescription
+  }
+  allPost(filter: { date: { gte: "2020" }}) {
     totalCount
-    pageInfo {
-      totalPages
-      currentPage
-      isFirst
-      isLast
-    }
     edges {
       node {
         id
@@ -50,25 +24,25 @@ query Posts ($page: Int) {
         path
       }
     }
+
   }
 }
 </page-query>
 
 <script>
-import { Pager } from 'gridsome'
-
+import PostList from "@/components/PostList";
 export default {
   components: {
-    Pager
+    PostList,
   },
-  metaInfo() {
+metaInfo() {
     return {
-      title: this.$static.metadata.siteName,
+      title: this.$page.siteName,
       meta: [
         { name: "author", content: "Santhosh Veer" },
         {
           rel: "canonical",
-          href: "https://hello.sanweb.info/"
+          href: "https://hello.sanweb.info/archives/"
         },
         {
           name: "twitter:url",
@@ -106,21 +80,22 @@ export default {
         }
       ]
   }
- }
-}
+},
+  computed: {
+    years() {
+      const years = {};
+      const posts = this.$page.allPost.edges;
+      posts.map((post) => {
+        const year = post.node.date.split(" ")[2];
+        years[year] = "";
+      });
+      return Object.keys(years).sort((a, b) => {
+        return b - a;
+      });
+    }
+  }
+};
 </script>
 
 <style>
-h1 {
-  font-size:2em;
-  margin:0;
-}
-.post-list {
-  margin-top:20px;
-}
-.date {
-  margin-right:10px;
-  min-width: 60px;
-  display:inline-block;
-}
 </style>
