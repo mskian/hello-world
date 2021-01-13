@@ -1,8 +1,8 @@
 <template>
   <div class="article-date">
-    Posted in - <a v-for="tag in tags" :key="tag.id" :href="'/tag/' + tag.title">
+    Posted in - <g-link v-for="tag in tags" :key="tag.id" :to="'/tag/' + tag.title">
        #{{ tag.title }}
-    </a>
+    </g-link>
     <span class="article-date"> {{ $page.post.date}} · <i>{{$page.post.timeToRead}} min read</i></span>
     <br>
     <br>

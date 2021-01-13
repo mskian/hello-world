@@ -11,7 +11,7 @@
         </p>
       </div>
       <div class="footer-links">
-        <a target="_blank" rel="noopener noreferrer" href="/archives/">Archives</a> |
+        <g-link target="_blank" rel="noopener noreferrer" to="/archives/">Archives</g-link> |
         <a target="_blank" rel="noopener noreferrer" href="/sitemap.xml">Sitemap</a> |
         <a target="_blank" rel="noopener noreferrer" href="/feed.xml">RSS Feed</a>
       </div>

@@ -8,7 +8,7 @@
       <article v-html="$page.post.content" />
       <br>
       <hr>
-      Written by <a :href="'/author/' +  $page.post.author.title">{{ $page.post.author.title}}</a>
+      Written by <g-link :to="'/author/' +  $page.post.author.title">{{ $page.post.author.title}}</g-link>
       <br>
       <br>
     </div>
