@@ -1,18 +1,17 @@
-# These are default recommended security headers, for Netlify
-# https://www.netlify.com/docs/headers-and-basic-auth/
+# Test the header rules at - https://play.netlify.com/headers
 
 /sw.js
   Cache-Control: no-cache
 
 /service-worker.js
-  Cache-Control: no-cache
+  Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: Wed, 11 Jan 1984 05:00:00 GMT
 
-/*.png
-  Cache-Control: public, max-age=31536000
-/*.css
-  Cache-Control: public, max-age=31536000
-/*.js
-  Cache-Control: public, max-age=31536000
+/assets/js/service-worker.js
+  Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: Wed, 11 Jan 1984 05:00:00 GMT
 
 /*
   Referrer-Policy: no-referrer-when-downgrade
