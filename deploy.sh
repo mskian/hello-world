@@ -21,7 +21,7 @@ PRODUCTION="d"
  if [ "$PREVIEW" == "$deployserver" ]; then
         netlify deploy
  elif [ "$PRODUCTION" == "$deployserver" ]; then
-       netlify deploy --prod
+        netlify deploy --prod --dir=dist
  else
       echo "Command Not matching"
  fi
