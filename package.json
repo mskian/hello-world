@@ -9,7 +9,9 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "newpost": "node scripts/newPost.js"
+    "newpost": "node scripts/newPost.js",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,vue}\"",
+    "server": "serve -s dist"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,7 @@
     "gridsome-plugin-service-worker": "^0.2.6",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
     "sass-loader": "^10.1.1"
   }
 }

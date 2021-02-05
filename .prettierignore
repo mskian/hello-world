@@ -1,0 +1,15 @@
+.cache
+package.json
+package-lock.json
+public
+build
+dist
+yarn.lock
+.netlify
+.github
+deploy.sh
+netlify.toml
+README.md
+LICENSE
+static
+content

@@ -1,13 +1,17 @@
 <template>
   <Layout>
-    <br>
-    <br>
+    <br />
+    <br />
     <h2 class="title is-size-1 has-text-centered">
       Tagged in: {{ $page.tag.title }}
     </h2>
-     <br>
-     <section class="posts">
-      <TagList v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
+    <br />
+    <section class="posts">
+      <TagList
+        v-for="edge in $page.tag.belongsTo.edges"
+        :key="edge.node.id"
+        :post="edge.node"
+      />
     </section>
   </Layout>
 </template>
@@ -35,22 +39,28 @@ query Tag($id: ID!) {
 </page-query>
 
 <script>
-import TagList from "@/components/TagList";
+import TagList from '@/components/TagList'
 export default {
   components: {
     TagList,
   },
   metaInfo() {
     return {
-    title: this.$page.tag.title,
-     meta: [
-        { key: 'description', name: "description", content: this.$page.tag.title + " - Share Something useful related to Life and tech." },
+      title: this.$page.tag.title,
+      meta: [
         {
-          rel: "canonical",
-          href: 'https://hello.sanweb.info' + "/tag/" + this.$page.tag.title
-        }
-      ]
-    };
+          key: 'description',
+          name: 'description',
+          content:
+            this.$page.tag.title +
+            ' - Share Something useful related to Life and tech.',
+        },
+        {
+          rel: 'canonical',
+          href: 'https://hello.sanweb.info' + '/tag/' + this.$page.tag.title,
+        },
+      ],
+    }
   },
-};
+}
 </script>

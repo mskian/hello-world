@@ -1,20 +1,23 @@
 <template>
   <div class="article-date">
-    Posted in - <g-link v-for="tag in tags" :key="tag.id" :to="'/tag/' + tag.title">
-       #{{ tag.title }}
+    Posted in -
+    <g-link v-for="tag in tags" :key="tag.id" :to="'/tag/' + tag.title">
+      #{{ tag.title }}
     </g-link>
-    <span class="article-date"> {{ $page.post.date}} · <i>{{$page.post.timeToRead}} min read</i></span>
-    <br>
-    <br>
+    <span class="article-date">
+      {{ $page.post.date }} · <i>{{ $page.post.timeToRead }} min read</i></span
+    >
+    <br />
+    <br />
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    tags: Array
-  }
-};
+    tags: Array,
+  },
+}
 </script>
 
 <style>

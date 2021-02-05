@@ -30,13 +30,13 @@ module.exports = {
             typeName: 'Author',
             create: true,
           },
-        },   
+        },
         remark: {
           plugins: [
-            ['@gridsome/remark-prismjs', {transformInlineCode: true}]
-          ]
-        }
-      }
+            ['@gridsome/remark-prismjs', { transformInlineCode: true }],
+          ],
+        },
+      },
     },
     {
       use: '@gridsome/plugin-sitemap',
@@ -57,19 +57,19 @@ module.exports = {
         contentTypes: ['Post'],
         feedOptions: {
           title: 'Hello World - Santhosh Veer',
-          description: 'Share Something useful related to Life and tech.'
+          description: 'Share Something useful related to Life and tech.',
         },
         rss: {
           enabled: true,
-          output: '/feed.xml'
+          output: '/feed.xml',
         },
         atom: {
           enabled: false,
-          output: '/feed.atom'
+          output: '/feed.atom',
         },
         json: {
           enabled: false,
-          output: '/feed.json'
+          output: '/feed.json',
         },
         maxItems: 25,
         htmlFields: ['description', 'content'],
@@ -78,32 +78,32 @@ module.exports = {
         nodeToFeedItem: (node) => ({
           title: node.title,
           date: node.date || node.fields.date,
-          content: node.content
-        })
-      }
-    },
-    {
-      use: "gridsome-plugin-manifest",
-      options: {
-        background_color: "#ffffff",
-        icon_path: "./src/assets/icons/Icon-512.png",
-        name: "Hello World",
-        short_name: "Hello World",
-        description: "Share Something useful related to Life and tech.",
-        theme_color: "#ffffff",
-        lang: "en",
-        display: "standalone",
-        orientation: "any",
-        start_url: "/",
+          content: node.content,
+        }),
       },
     },
     {
-      use: "gridsome-plugin-service-worker",
+      use: 'gridsome-plugin-manifest',
       options: {
-        precachedRoutes: ["/"],
+        background_color: '#ffffff',
+        icon_path: './src/assets/icons/Icon-512.png',
+        name: 'Hello World',
+        short_name: 'Hello World',
+        description: 'Share Something useful related to Life and tech.',
+        theme_color: '#ffffff',
+        lang: 'en',
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/',
+      },
+    },
+    {
+      use: 'gridsome-plugin-service-worker',
+      options: {
+        precachedRoutes: ['/'],
         cacheOnly: {
-          cacheName: "co-v1",
-          routes: ["/",],
+          cacheName: 'co-v1',
+          routes: ['/'],
         },
       },
     },
@@ -111,7 +111,7 @@ module.exports = {
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
     },
   },
 }

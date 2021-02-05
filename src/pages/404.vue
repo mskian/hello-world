@@ -8,9 +8,9 @@
 
 <script>
 export default {
-  metaInfo () {
+  metaInfo() {
     return {
-      title: "Page Not Found (404)",
+      title: 'Page Not Found (404)',
     }
   },
 }
