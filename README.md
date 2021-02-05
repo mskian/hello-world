@@ -48,6 +48,12 @@ yarn develop
 yarn newpost
 ```
 
+- Code Format
+
+```sh
+yarn format
+```
+
 - Production Build
 
 ```sh
@@ -55,6 +61,12 @@ yarn build
 ```
 
 - Production Build store the Static Files on `dist` Folder
+- Test the Production Build on Localhost
+
+```sh
+npm install -g serve
+yarn server
+```
 
 ## Free Hosting 💯
 
