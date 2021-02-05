@@ -24,7 +24,8 @@ I just made some Modifications and Include Extra Features like
 - Create new post file via Command
 - Custom 404 Error Page
 - Pagination
-- Archive Page  
+- Archive Page
+- Schema Markup  
 
 ## Usage 📦
 

@@ -67,10 +67,6 @@ export default {
       meta: [
         { name: 'author', content: 'Santhosh Veer' },
         {
-          rel: 'canonical',
-          href: 'https://hello.sanweb.info/',
-        },
-        {
           name: 'twitter:url',
           content: 'https://hello.sanweb.info/',
         },
@@ -106,6 +102,44 @@ export default {
           property: 'og:image:secure_url',
           content:
             'https://hello.sanweb.info/assets/media/helloworld-cover.png',
+        },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://hello.sanweb.info/',
+        },
+      ],
+      script: [
+        {
+          innerHTML: `{ {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        publisher: {
+          '@type': 'Organization',
+          name: "${this.$static.metadata.siteName}",
+          url: 'https://hello.sanweb.info/',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://hello.sanweb.info/assets/img/Icon-512-72.png',
+            width: 72,
+            height: 72,
+          },
+        },
+        url: 'https://hello.sanweb.info/',
+        image: {
+          '@type': 'ImageObject',
+          url: 'https://hello.sanweb.info/assets/media/helloworld-cover.png',
+          width: 1200,
+          height: 630,
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://hello.sanweb.info/',
+        },
+        description: 'Share Something useful related to Life and tech.',
+      },}`,
+          type: 'application/ld+json',
         },
       ],
     }

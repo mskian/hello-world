@@ -60,10 +60,6 @@ export default {
           content: this.$page.post.description,
         },
         {
-          rel: 'canonical',
-          href: 'https://hello.sanweb.info' + this.$page.post.path,
-        },
-        {
           name: 'twitter:url',
           content: 'https://hello.sanweb.info' + this.$page.post.path,
         },
@@ -93,6 +89,12 @@ export default {
           property: 'og:image:secure_url',
           content:
             'https://hello.sanweb.info/assets/media/helloworld-cover.png',
+        },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://hello.sanweb.info' + this.$page.post.path,
         },
       ],
     }
