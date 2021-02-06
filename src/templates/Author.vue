@@ -55,6 +55,8 @@ export default {
             this.$page.author.title +
             ' - Share Something useful related to Life and tech.',
         },
+      ],
+      link: [
         {
           rel: 'canonical',
           href:

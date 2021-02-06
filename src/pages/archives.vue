@@ -41,10 +41,6 @@ export default {
       meta: [
         { name: 'author', content: 'Santhosh Veer' },
         {
-          rel: 'canonical',
-          href: 'https://hello.sanweb.info/archives/',
-        },
-        {
           name: 'twitter:url',
           content: 'https://hello.sanweb.info/',
         },
@@ -80,6 +76,12 @@ export default {
           property: 'og:image:secure_url',
           content:
             'https://hello.sanweb.info/assets/media/helloworld-cover.png',
+        },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://hello.sanweb.info/archives/',
         },
       ],
     }

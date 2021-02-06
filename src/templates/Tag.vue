@@ -55,6 +55,8 @@ export default {
             this.$page.tag.title +
             ' - Share Something useful related to Life and tech.',
         },
+      ],
+      link: [
         {
           rel: 'canonical',
           href: 'https://hello.sanweb.info' + '/tag/' + this.$page.tag.title,
