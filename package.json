@@ -43,6 +43,6 @@
     "moment": "^2.29.1",
     "node-sass": "^6.0.1",
     "prettier": "^2.6.2",
-    "sass-loader": "^10.2.1"
+    "sass-loader": "^12.6.0"
   }
 }
