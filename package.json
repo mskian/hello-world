@@ -42,7 +42,7 @@
     "gridsome-plugin-service-worker": "^0.2.8",
     "moment": "^2.29.4",
     "node-sass": "^8.0.0",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "sass-loader": "^10.4.1"
   }
 }
