@@ -1622,21 +1622,18 @@
     escape-string-regexp "^1.0.5"
     lodash.deburr "^4.1.0"
 
-"@sindresorhus/slugify@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/slugify/-/slugify-2.2.1.tgz#fa2e2e25d6e1e74a2eeb5e2c37f5ccc516ed2c4b"
-  integrity sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==
+"@sindresorhus/slugify@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/slugify/-/slugify-4.0.1.tgz#86050a42bf4b1ee27acd1a712f8b9f2c9a2c300f"
+  integrity sha512-DsuqdYRMBj9zcLBQ6m0KrkrWi8PuxXcPlO7CEjrhCOZWt8JPEMCuD3LD3FOgET/sHqgOE++xvkZI0HONqFyaug==
   dependencies:
-    "@sindresorhus/transliterate" "^1.0.0"
+    "@sindresorhus/transliterate" "^3.0.0"
     escape-string-regexp "^5.0.0"
 
-"@sindresorhus/transliterate@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/transliterate/-/transliterate-1.0.0.tgz#7efc60bd347c16f416582eb7d18fee3bbaa3379b"
-  integrity sha512-5429x9FXQzC8UIav+yeMVOQTL/DdJ3ANJOyuSAvwVSLmPSsw/7KWyXpncvFbJEe4h2MfvINSrjhRgDiltSjTlw==
-  dependencies:
-    escape-string-regexp "^5.0.0"
-    lodash.deburr "^4.1.0"
+"@sindresorhus/transliterate@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/transliterate/-/transliterate-3.0.0.tgz#c07dd79dd6d57b9e36e885472e850dd9b319b174"
+  integrity sha512-mqOUtMxpY419WtwwYw1EX865Oh+QWpa37yhGLXNmVc6d91wsBYLG51TgSePqrdnCSnTJn2AygX+35StK86tNOA==
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
